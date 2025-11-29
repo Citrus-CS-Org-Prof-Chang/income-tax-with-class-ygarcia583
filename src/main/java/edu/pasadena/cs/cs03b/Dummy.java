@@ -9,6 +9,19 @@ public class Dummy {
 
 	    int[] salaryTable = {20000, 5000, 100000, Integer.Max_Value};
 		double[] taxRateTable = {0.10,0.20, 0.30, 0.40};
+
+		for (int i = 0; i < salaryTable.length; i++) {
+			if (annualIncome <= salaryTable [i]) {
+				return taxRateTable[i];
+			}
+		}
+
+		return taxRateTable[taxRateTable.length - 1];
+	}
+
+	public static double calculateTax (double annualIncome) {
+		double rate = getTaxRate(annualIncome);
+		return annualIncome * rate;
 	}
 
 	public static int dummy() {
