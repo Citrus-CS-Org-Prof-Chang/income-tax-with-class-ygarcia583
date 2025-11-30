@@ -24,6 +24,27 @@ public class Dummy {
 		return annualIncome * rate;
 	}
 
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		while (true) { 
+			System.out.println("Enter annual income (-1 to exit): ");
+			double income = scanner.nextDouble();
+
+			if (income == -1) {
+				System.out.println("Exiting the program.");
+				break;
+			}
+			
+			double taxRate = getTaxRate(income);
+			double taxAmount = calculateTax(income);
+
+			System.out.printf("Annual Income: %.2f Tax rate: %.2f%% Tax to pay: %.2f%n", income, taxRate * 100, taxAmount);
+		}
+
+		scanner.close();
+	}
 	public static int dummy() {
 		
 		
