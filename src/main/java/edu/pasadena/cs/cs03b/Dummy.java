@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Dummy {
 
-	public static void main(String[] args) {
+	 {
 	public static double getTaxRate(double annualIncome)
 
 	    int[] salaryTable = {20000, 5000, 100000, Integer.Max_Value};
