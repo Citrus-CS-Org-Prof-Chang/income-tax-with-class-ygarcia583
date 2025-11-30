@@ -46,11 +46,7 @@ public class Dummy {
 		scanner.close();
 	}
 	public static int dummy() {
-		
-		
-		// TOOD: add your logic here
-
-		return 1;
+	return 1;
 	}
 
 }
