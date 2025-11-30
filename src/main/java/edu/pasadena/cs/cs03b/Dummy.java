@@ -1,6 +1,6 @@
 package edu.pasadena.cs.cs03b;
 
-import java.util.Scanner
+import java.util.Scanner;
 
 public class Dummy {
 
