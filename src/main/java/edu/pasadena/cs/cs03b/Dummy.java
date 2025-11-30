@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Dummy {
 
 	 
-	public static double getTaxRate(double annualIncome)
+	public static double getTaxRate(double annualIncome) {
 
-	    int[] salaryTable = {20000, 5000, 100000, Integer.Max_Value};
+	    int[] salaryTable = {20000, 50000, 100000, Integer.MAX_VALUE};
 		double[] taxRateTable = {0.10,0.20, 0.30, 0.40};
 
 		for (int i = 0; i < salaryTable.length; i++) {
